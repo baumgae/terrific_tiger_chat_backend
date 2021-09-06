@@ -1,0 +1,46 @@
+/*
+This is an Example JSON File of the structure inside the mongodb
+of the collection "chat"
+*/
+[
+  {
+    "chatID" : "71809fdf-a32f-46ec-8fa5-e367731ee24a",
+    "chatpartner1ID" : "fe66f8c6-bffd-42d6-96de-8a26e4a147b7", // Max
+    "chatpartner2ID" : "1aba75c5-791b-4384-81db-c9c1a733ff02", // Anna
+    "chatpartner1Name" : "maxboy",
+    "chatpartner2Name" : "annagirl",
+    "chatMessages" : [
+      {
+        "authorName" : "maxboy", // Max
+        "created" : "2019-06-10 00:45:58",
+        "content": "Hello, How are you doing?"
+      },
+      {
+        "authorName" : "maxboy", // Max
+        "created" : "2019-06-10 00:46:56",
+        "content": "You are beautiful... <3"
+      },
+      {
+        "authorName" : "annagirl", // Anna
+        "created" : "2019-06-10 00:48:02",
+        "content": "You scare me."
+      }
+    ],
+    "lastModified" : "2019-06-10 00:45:58"
+  },
+  {
+    "chatID" : "9d68cf75-7f49-48a9-8863-9c47c406006e",
+    "chatpartner1ID" : "4058730c-abe1-4643-b323-a2b34208ed41",  // Hans
+    "chatpartner2ID" : "fe66f8c6-bffd-42d6-96de-8a26e4a147b7", // Max
+    "chatpartner1Name" : "hannsi_89",
+    "chatpartner2Name" : "maxboy",
+    "chatMessages" : [
+      {
+        "authorName" : "hannsi_89", // Hans
+        "created" : "2019-06-10 00:48:02",
+        "content": "Hey, let's be friends :) "
+      }
+    ],
+    "lastModified" : "2019-06-10 00:45:58"
+  }
+]

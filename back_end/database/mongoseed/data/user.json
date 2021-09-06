@@ -1,0 +1,42 @@
+/*
+This is an Example JSON File of the structure inside the mongodb
+of the collection "user"
+*/
+
+[
+  {
+    "id" : "fe66f8c6-bffd-42d6-96de-8a26e4a147b7",
+    "first_name" : "Max",
+    "last_name" : "Mustermann",
+    "username" : "maxboy",
+    "email" : "max@hotmail.com",
+    "password" : "$2a$10$rCFtTv9yG1ToVnOFeVwn0uL8QCLgl1GARKzcOZ5Hle9/AXRNAKFAa",    // 12345
+    "created" : "2019-06-09 15:11:03.315842",
+    "picture-url" : "",
+    "conctact-list" : ["1aba75c5-791b-4384-81db-c9c1a733ff02", "4058730c-abe1-4643-b323-a2b34208ed41"]
+  },
+  {
+    "id" : "1aba75c5-791b-4384-81db-c9c1a733ff02",
+    "first_name" : "Anna",
+    "last_name" : "Musterfrau",
+    "username" : "annigirl",
+    "email" : "anna@hotmail.com",
+    "password" : "$2a$10$UvvVnZYQPV5b3BXbvEIEkOIIUWjyNc4Ro9vwK4NU13nQIAElwjkdi",    // ABCD
+    "created" : "2019-06-09 15:11:03.315842",
+    "picture-url" : "",
+    "conctact-list" : ["fe66f8c6-bffd-42d6-96de-8a26e4a147b7", "4058730c-abe1-4643-b323-a2b34208ed41"]
+
+  },
+  {
+    "id" : "4058730c-abe1-4643-b323-a2b34208ed41",
+    "first_name" : "Hans",
+    "last_name" : "Schmidt",
+    "username" : "hannsi_89",
+    "email" : "hansmit@gmx.de",
+    "password" : "$2a$10$JQE9Y.qTRyklflFVPhZjtupZ0Ttcckm5lOIN.1vp89miStSj0lo56",    // Test12
+    "created" : "2019-06-09 15:11:03.315842",
+    "picture-url" : "",
+    "conctact-list" : ["fe66f8c6-bffd-42d6-96de-8a26e4a147b7", "1aba75c5-791b-4384-81db-c9c1a733ff02"]
+
+  }
+]

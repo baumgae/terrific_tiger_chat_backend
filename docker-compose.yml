@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  # cd front-end
+  # ng build
+  # docker-compose build
+  # docker run -p 3000:80 --rm terrific-tiger_frontend
+  front-end:
+    container_name: terrific_tiger_frontend
+    image: terrific-tiger_front-end
+    build: 
+      context: front-end
+      dockerfile: ./Dockerfile
+    ports: 
+     - 3000:80
+    
+  terrificdb:
+    restart: always
+    container_name: terrific_tiger_db
+    environment:
+      - MONGODB_DATABASE=terrific_tiger_db
+    volumes:
+      - ./back_end/database/mongodb/data/db
+    ports:
+      - 27017:27017
+    image: mongo:latest
+
+  # mongo-seed:
+  #   container_name: mongo-seed
+  #   build:
+  #    context: back_end/database/mongoseed
+  #    dockerfile: ./Dockerfile
+  #  depends_on:
+  #    - mongo
+
+  back-end:
+    container_name: back-end
+    build:
+      context: back_end
+      dockerfile: ./Dockerfile
+    depends_on:
+        - terrificdb
+    ports:
+        - 5000:5000
+
+  # app:
+  #  image: 'terrific-tiger-chat'
+  #  build: '.'
+  #  ports:
+  #   - 3000:80
